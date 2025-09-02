@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUGIOH GAME</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <!--
+    <header>
+        <div class="welcome-card">
+            <h1>Welcome to the YUGIOH Game</h1>
+            <p>Get ready to duel!</p>
+            <button id="start-duel-button" class="rpgui-button">Start Duel</button>
+        </div>
+    </header>
+    -->
+    <main>
+        <div class="bg-video">
+            <video autoplay muted loop class="game-video">
+                <source src="src/assets/video/yugi.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="main-game-card redbord">
+            <div class="left-game-pannel framed-golden-2">
+                <div class="score-card left-pannel-info redbord">
+                    <div class="win-score">
+                        Win: <span id="score-win">0</span>
+                    </div>
+                    <div class="lose-score">Lose: <span id="score-lose">0</span></div>
+                </div>
+                <div id="player-card" class="player-card redbord">
+                    CARD
+                    <img id="player-card-image">
+                </div>
+                <div class="game-info left-pannel-info redbord">
+                    ROUND 1
+                    <p id="card-name">a</p>
+                    <p id="card-type">b</p>
+                </div>
+            </div>
+            <div class="right-game-pannel framed-golden-2">
+                <div id="challenger-card" class="right-pannel-deck framed">UP</div>
+                <div id="battle-card" class="right-pannel-move redbord">
+                    <div id="player-move" class="card-move redbord">
+                        PLAYER
+                        <img id="player-field-card">
+                    </div>
+                    <div class="versus redbord">
+                        VS
+                        <img src="src/assets/icons/millenium2.png" alt="VS" class="versus-img">
+                    </div>
+                    <div id="challenger-move" class="card-move redbord">
+                        CHALLENGER
+                        <img id="challenger-field-card">
+                    </div>
+                </div>
+                <div id="button-play" class="right-pannel-button">
+                    <button id="next-duel" class="rpgui-button">PLAY</button>
+                </div>
+                <div id="player-card" class="right-pannel-deck  framed">DOWN</div>
+            </div>
+        </div>
+    </main>
+    <script src="src/scripts/engine.js" defer></script>
+</body>
+</html>
