@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUGIOH GAME</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="shortcut icon" href="/src/assets/favicon/Favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <audio id="bgm" loop>
+        <source src="/src/assets/audios/egyptian_duel.mp3" type="audio/mp3">
+    </audio>
+    <!--
+    <header>
+        <div class="welcome-card">
+            <h1>Welcome to the YUGIOH Game</h1>
+            <p>Get ready to duel!</p>
+            <button id="start-duel-button" class="rpgui-button">Start Duel</button>
+        </div>
+    </header>
+    -->
+    <main>
+        <div class="bg-video">
+            <video autoplay muted loop class="game-video">
+                <source src="src/assets/video/yugi.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="main-game-card redbord">
+            <div class="left-game-pannel framed-golden-2">
+                <div id="score-card" class="left-pannel-info redbord">
+                    <div class="win-score">
+                        Win: <span id="score-win">0</span>
+                    </div>
+                    <div class="lose-score">
+                        Lose: <span id="score-lose">0</span>
+                    </div>
+                </div>
+                <div id="player-card" class="player-card redbord">
+                    <img id="player-card-image">
+                </div>
+                <div class="game-info left-pannel-info redbord">
+                    <p id="card-name">Select</p>
+                    <p id="card-type">a card</p>
+                </div>
+            </div>
+            <div class="right-game-pannel framed-golden-2">
+                <div id="challenger-deck-card" class="right-pannel-deck framed"></div>
+                <div id="battle-card" class="right-pannel-move">
+                    <div id="player-move" class="card-move redbord">
+                        <img id="player-field-card">
+                    </div>
+                    <div class="versus">
+                        <img src="src/assets/icons/millenium2.png" alt="VS" class="versus-img">
+                    </div>
+                    <div id="challenger-move" class="card-move redbord">
+                        <img id="challenger-field-card">
+                    </div>
+                </div>
+                <div id="button-play" class="right-pannel-button">
+                    <button id="next-duel-button" class="rpgui-button" onclick="resetDuel()">PLAY</button>
+                </div>
+                <div id="player-deck-card" class="right-pannel-deck  framed"></div>
+            </div>
+        </div>
+    </main>
+    <script src="src/scripts/engine.js" defer></script>
+</body>
+</html>
